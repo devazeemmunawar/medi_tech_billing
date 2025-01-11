@@ -4284,12 +4284,6 @@ body {
   .margin-bottom {
     margin-bottom: 2.5rem !important;
   }
-  .display-footer {
-    justify-items: center !important;
-  }
-  .logo-size {
-    margin-left: 35px !important;
-  }
 }
 /*=========================
 	End Footer CSS
