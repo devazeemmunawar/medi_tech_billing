@@ -4228,6 +4228,26 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* For small screens */
+  .account-image-large {
+    display: none; /* Hide on small screens */
+  }
+  .account-image-mobile {
+    display: block; /* Show on small screens */
+  }
+}
+
+@media (min-width: 769px) {
+  /* For large screens */
+  .account-image-large {
+    display: block; /* Show on large screens */
+  }
+  .account-image-mobile {
+    display: none; /* Hide on large screens */
+  }
+}
+
+@media (max-width: 768px) {
   .logo img {
     width: 120px !important;
     padding-bottom: 0px !important;
