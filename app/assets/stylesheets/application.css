@@ -4004,7 +4004,7 @@ body {
 .footer .footer-top {
   padding: 50px 0px;
   position: relative;
-  background: #353535;
+  background: #1a76d1;
 }
 .footer .footer-top:before {
   position: absolute;
@@ -4208,7 +4208,7 @@ body {
 }
 
 .elementor-heading-title {
-  color: #1d6ea3;
+  color: #1a76d1;
   font-family: "Montserrat", Sans-serif;
   font-size: 34px;
   font-weight: 500;
@@ -4237,6 +4237,58 @@ body {
   }
   .slicknav_btn {
     margin: 40px 16px 0px;
+  }
+  .slider .single-slider {
+    height: 192px !important;
+    width: 430px !important;
+  }
+  .slider .single-slider h1 {
+    font-size: 15px;
+    line-height: 1.5em;
+    width: 50% !important;
+  }
+  .slider .single-slider .text {
+    margin-top: 60px !important;
+  }
+  .slider .single-slider p {
+    display: none;
+  }
+  .slider .single-slider a {
+    padding: 0px 10px !important;
+    font-size: 6px !important;
+  }
+  .slider .single-slider a span {
+    font-size: 8px !important;
+  }
+  .breadcrumbs-about {
+    background-position: -100px 0px !important;
+    background-size: cover !important;
+    padding: 60px 20px 60px 4px !important;
+  }
+  .breadcrumbs {
+    background-position: -100px 0px !important;
+    background-size: cover !important;
+    padding: 60px 20px 60px 4px !important;
+  }
+  .breadcrumbs-about h2 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+  }
+  .breadcrumbs h2 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+  }
+  .about-summary {
+    padding: 10px 20px;
+  }
+  .margin-bottom {
+    margin-bottom: 2.5rem !important;
+  }
+  .display-footer {
+    justify-items: center !important;
+  }
+  .logo-size {
+    margin-left: 35px !important;
   }
 }
 /*=========================
