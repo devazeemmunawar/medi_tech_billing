@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name='copyright' content=''>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MediTechBilling</title>
+    <title>Medi Tech Billing</title>
     <link rel="icon" href="<%= asset_path('favicon.png') %>">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<%= asset_path('application.css') %>">
@@ -39,14 +39,14 @@
                         <div class="col-lg-3 col-md-3 col-12">
                             <!-- Start Logo -->
                             <div class="logo">
-                                <a href="<%= root_path %>"><%= image_tag 'medi-logo.png', alt: '#', style: "width: 31%; padding-bottom: 10px;" %></a>
+                                <a href="<%= root_path %>"><%= image_tag 'MTB Logo-06.png', alt: '#', style: "width: 45%; padding-bottom: 30px;" %></a>
                             </div>
                             <!-- End Logo -->
                             <!-- Mobile Nav -->
                             <div class="mobile-nav"></div>
                             <!-- End Mobile Nav -->
                         </div>
-                        <div class="col-lg-7 col-md-9 col-12" style="padding-top: 10px;">
+                        <div class="col-lg-7 col-md-9 col-12" style="padding-top: 10px; justify-items: center;">
                             <div class="main-menu">
                                 <nav class="navigation">
                                     <ul class="nav menu">
@@ -55,7 +55,7 @@
                                         </li>
                                         <li><a href="<%= about_path %>">About Us</a></li>
                                         <li>
-                                            <a href="<%= services_path %>">Services<i class="icofont-rounded-down"></i></a>
+                                            <a href="javascript:void(0);" class="scroll-to-services">Services<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="<%= root_path %>">Complete RCM Solutions</a></li>
                                                 <li><a href="<%= root_path %>">Accounts Receivable</a></li>
@@ -91,7 +91,7 @@
                                 <p class="text-color" style="width: 60%;">
                                     Tired of spending countless hours tracking insurance enrollment statuses? Let MTB Solutions take care of it all, giving you peace of mind and a seamless, stress-free experience.
                                 </p>
-                                <a href="<%= contact_path %>" class="mt-4 btn" style="border-radius: unset; background-color: #1a76d1; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                                <a href="<%= contact_path %>" class="mt-4 btn">
                                     <span style="color: white; font-size: 13px;">Schedule Consultation</span>
                                 </a>
                             </div>
@@ -156,7 +156,7 @@
         </div>
     </section>
 
-    <div class="about-us section-background" style="justify-items: center;">
+    <div id="services" class="about-us section-background" style="justify-items: center;">
         <h3 class="elementor-heading-title elementor-size-default">OUR <span style="color:black; text-decoration: underline; text-decoration-color: #1a76d1">SERVICES</span></h3>
     </div>
 
@@ -419,7 +419,7 @@
                     <div class="col-lg-4 col-md-6 col-12 display-footer logo-size">
                         <div class="single-footer">
                             <div class="logo">
-                                <a href="<%= root_path %>"><%= image_tag 'white-logo.png', alt: '#', style: "width: 30%;" %></a>
+                                <a href="<%= root_path %>"><%= image_tag 'MTB Logo-06.png', alt: '#', style: "width: 45%;" %></a>
                             </div>
                             <ul class="mt-2">
                                 <li><i style="color: #FFFFFF;" class="fa fa-envelope"></i><a style="color: #FFFFFF; padding-left: 10px; align-self: center;">meditechbilling.us@gmail.com</a></li>
@@ -435,7 +435,7 @@
                                     <ul>
                                         <li><a href="<%= root_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
                                         <li><a href="<%= about_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-                                        <li><a href="<%= services_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+                                        <li><a href="#services" class="scroll-to-services"><i class="fa fa-caret-right"></i>Services</a></li>
                                         <li><a href="<%= contact_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
                                     </ul>
                                 </div>
@@ -479,3 +479,14 @@
 </body>
 
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const scrollToServices = document.querySelector('.scroll-to-services');
+        scrollToServices.addEventListener('click', function() {
+            const servicesSection = document.getElementById('services');
+            servicesSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
