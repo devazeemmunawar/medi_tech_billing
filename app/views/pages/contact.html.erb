@@ -129,6 +129,7 @@
                             <p>If you have any questions please fell free to contact with us.</p>
                             <form class="form" action="<%= schedule_consultation_path %>" method="post">
                                 <%= csrf_meta_tags %>
+                                <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-group">
