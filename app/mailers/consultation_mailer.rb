@@ -3,7 +3,7 @@ class ConsultationMailer < ApplicationMailer
 
   def schedule_consultation(form_data)
     @form_data = form_data
-    mail(to: @form_data[:email], from: 'meditechbilling.us@gmail.com', subject: 'New Consultation Request') do |format|
+    mail(to: 'meditechbilling.us@gmail.com', subject: 'New Consultation Request') do |format|
       format.html { render 'schedule_consultation' }
     end
   end
