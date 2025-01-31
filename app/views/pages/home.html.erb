@@ -16,70 +16,7 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="topbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-5 col-12">
-                    </div>
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <!-- Top Contact -->
-                        <ul class="top-contact">
-                            <li><i class="fa fa-phone"></i>+19543864393</li>
-                            <li><i class="fa fa-envelope"></i><a>meditechbilling.usa@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-inner">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <!-- Start Logo -->
-                            <div class="logo">
-                                <a href="<%= root_path %>"><%= image_tag 'MTB Logo-06.png', alt: '#', style: "width: 45%; padding-bottom: 30px;" %></a>
-                            </div>
-                            <!-- End Logo -->
-                            <!-- Mobile Nav -->
-                            <div class="mobile-nav"></div>
-                            <!-- End Mobile Nav -->
-                        </div>
-                        <div class="col-lg-7 col-md-9 col-12" style="padding-top: 10px; justify-items: center;">
-                            <div class="main-menu">
-                                <nav class="navigation">
-                                    <ul class="nav menu">
-                                        <li class="active">
-                                            <a href="<%= root_path %>">Home </a>
-                                        </li>
-                                        <li><a href="<%= about_path %>">About Us</a></li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="scroll-to-services">Services<i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="<%= root_path %>">Complete RCM Solutions</a></li>
-                                                <li><a href="<%= root_path %>">Accounts Receivable</a></li>
-                                                <li><a href="<%= root_path %>">Payment Reconciliation</a></li>
-                                                <li><a href="<%= root_path %>">Claims Scrubber/Validation</a></li>
-                                                <li><a href="<%= root_path %>">Accurate Coding</a></li>
-                                            </ul>
-                                        </li> <!-- Update with the correct path for services -->
-                                        <li><a href="<%= contact_path %>">Contact Us</a></li> <!-- Update with the correct path for contact -->
-                                    </ul>
-                                </nav>
-                            </div>
-                            <!--/ End Main Menu -->
-                        </div>
-                        <div class="col-lg-2 col-12" style="padding-top: 10px;">
-                            <div class="get-quote">
-                                <a href="<%= contact_path %>" class="btn">Schedule Consultation</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <%= render "shared/navbar" %>
     <section class="slider">
         <div class="hero-slider">
             <div class="single-slider" style="background-image:url('<%= asset_path('slider-3.jpg') %>')">
@@ -173,12 +110,63 @@
                     <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-weight: 400;">
                         Our Medical Billing Specialists help practices boost collections and expedite payments with minimal effort. With our fully integrated PM solution and workflow, providers can efficiently manage variances and denials while maximizing reimbursements.
                     </p>
-                    <a href="<%= about_path %>" class="btn" style="border-radius: unset; background-color: #1a76d1; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                    <a href="<%= revenue_cycle_management_path %>" class="btn" style="border-radius: unset; background-color: #1a76d1; padding: 6px 20px; font-size: 16px; float: inline-start;">
                         <span style="color: white; font-size: 13px;">Read More</span>
                     </a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <%= image_tag 'rcm_1.png', alt: 'rcm_1', style: "float: inline-end; width: 500px;" %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section-background" style="padding-top: 100px;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 account-image-large">
+                    <%= image_tag 'abc.png', alt: 'Billing Audit', style: "float: inline-start; width: 65%;" %>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Medical Billing <span style="color:black; text-decoration: underline; text-decoration-color: #1a76d1">Audit</span></h2>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 24px; font-weight: 400;">
+                        At MediTech Billing, we specialize in providing comprehensive medical billing audit services designed to ensure accuracy, compliance, and optimal revenue performance for healthcare providers. Our expert team meticulously reviews your billing practices, coding, and documentation to identify errors, reduce claim denials, and prevent potential fraud.
+                    </p>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-weight: 400;">
+                        We help you stay compliant with regulatory standards like HIPAA, Medicare, and Medicaid, while maximizing reimbursements and improving financial efficiency. Trust MediTech Billing to deliver tailored audit solutions that enhance transparency, streamline operations, and safeguard your practice’s financial health. Let us handle the complexities of medical billing audits so you can focus on delivering exceptional patient care.
+                    </p>
+                    <a href="<%= medical_billing_audit_path %>" class="btn" style="border-radius: unset; background-color: #1a76d1; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 account-image-mobile">
+                    <%= image_tag 'abc.png', alt: 'rcm', style: "width: 65%;" %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section-background" style="padding-top: 100px;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Provider <span style="color:black; text-decoration: underline; text-decoration-color: #1a76d1">Credentialing</span></h2>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 24px; font-weight: 400;">
+                        At MediTech Billing, we offer expert provider credentialing services to streamline the process of enrolling healthcare providers with insurance networks, hospitals, and other healthcare entities. Our dedicated team ensures accurate and timely completion of credentialing applications, verifications, and revalidations, helping you avoid delays and compliance issues.
+                    </p>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-weight: 400;">
+                        We handle the complexities of credentialing, including CAQH enrollment, payer enrollments, and primary source verifications, so you can focus on delivering quality patient care. With MediTech Billing, you gain a trusted partner committed to simplifying credentialing, reducing administrative burdens, and ensuring your providers are fully credentialed and ready to practice. Let us help you navigate the credentialing process with efficiency and precision.
+                    </p>
+                    <a href="<%= about_path %>" class="btn" style="border-radius: unset; background-color: #1a76d1; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 account-image-large">
+                    <%= image_tag 'doc-2.webp', alt: 'rcm', style: "width: 65%;" %>
                 </div>
             </div>
         </div>
@@ -200,9 +188,6 @@
                     <a href="<%= about_path %>" class="btn" style="border-radius: unset; background-color: #1a76d1; padding: 6px 20px; font-size: 16px; float: inline-start;">
                         <span style="color: white; font-size: 13px;">Read More</span>
                     </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 account-image-mobile">
-                    <%= image_tag 'account.png', alt: 'rcm', style: "width: 65%;" %>
                 </div>
             </div>
         </div>
@@ -330,74 +315,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
-                    <form class="form" action="<%= schedule_consultation_path %>" method="post">
-                        <%= csrf_meta_tags %>
-                        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="form-group">
-                                    <input name="name" type="text" placeholder="Name" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="form-group">
-                                    <input name="business_name" type="text" placeholder="Business Name" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="form-group">
-                                    <input name="email" type="email" placeholder="Email" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="form-group">
-                                    <input name="phone" type="text" placeholder="Phone" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="form-group">
-                                    <select name="monthly_billing" class="form-control" required>
-                                        <option value="" disabled selected>Select Monthly Billing</option>
-                                        <option value="1k to 30k">1k to 30k</option>
-                                        <option value="31k to 100k">31k to 100k</option>
-                                        <option value="Above 100k">Above 100k</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="form-group">
-                                    <select name="number_of_providers" class="form-control" required>
-                                        <option value="" disabled selected>Select Number of Providers</option>
-                                        <option value="1 to 5">1 to 5</option>
-                                        <option value="6 to 10">6 to 10</option>
-                                        <option value="Above 10">Above 10</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-12">
-                                <div class="form-group">
-                                    <input name="total_ar" type="text" placeholder="Total AR" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-12">
-                                <div class="form-group">
-                                    <textarea name="message" placeholder="Write Your Message Here....." required></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-5 col-md-4 col-12">
-                                <div class="form-group">
-                                    <div class="button">
-                                        <button type="submit" class="btn">SCHEDULE A CONSULTATION</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-7 col-md-8 col-12">
-                                <p>( We will confirm by an email )</p>
-                            </div>
-                        </div>
-                    </form>
+                    <%= render "shared/form" %>
                 </div>
                 <div class="col-lg-6 col-md-12 ">
                     <div class="appointment-image">
@@ -407,52 +325,7 @@
             </div>
         </div>
     </section>
-
-    <footer id="footer" class="footer ">
-        <!-- Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 display-footer logo-size">
-                        <div class="single-footer">
-                            <div class="logo">
-                                <a href="<%= root_path %>"><%= image_tag 'MTB Logo-06.png', alt: '#', style: "width: 45%;" %></a>
-                            </div>
-                            <ul class="mt-2">
-                                <li><i style="color: #FFFFFF;" class="fa fa-envelope"></i><a style="color: #FFFFFF; padding-left: 10px; align-self: center;">meditechbilling.usa@gmail.com</a></li>
-                                <li style="color: #FFFFFF;"><i style="color: #FFFFFF; padding-right: 10px;" class="fa fa-phone"></i>+19543864393</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-12 display-footer">
-                        <div class="single-footer f-link">
-                            <h2>Important Links</h2>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <ul>
-                                        <li><a href="<%= root_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-                                        <li><a href="<%= about_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-                                        <li><a href="#services" class="scroll-to-services"><i class="fa fa-caret-right"></i>Services</a></li>
-                                        <li><a href="<%= contact_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 display-footer">
-                        <div class="single-footer">
-                            <h2>Follow Us</h2>
-                            <ul class="social">
-                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                <li><a href="#"><i class="icofont-instagram"></i></a></li> <!-- Updated to Instagram -->
-                                <li><a href="#"><i class="icofont-linkedin"></i></a></li> <!-- Updated to LinkedIn -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <%= render "shared/footer" %>
     <script src="<%= asset_path('js/jquery.min.js') %>"></script>
     <script src="<%= asset_path('js/jquery-migrate-3.0.0.js') %>"></script>
     <script src="<%= asset_path('js/jquery-ui.min.js') %>"></script>

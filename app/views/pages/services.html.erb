@@ -1,2 +1,207 @@
-<h1>Pages#services</h1>
-<p>Find me in app/views/pages/services.html.erb</p>
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Services</title>
+    <link rel="icon" href="<%= asset_path('favicon.png') %>">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<%= asset_path('application.css') %>">
+</head>
+
+<body>
+    <%= render "shared/navbar" %>
+    <div class="breadcrumbs-about" style="background-image:url('<%= asset_path('about-us.jpg') %>');">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Service</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- app/views/services/index.html.erb -->
+    <div class="container-fluid px-0">
+        <!-- Hero Section -->
+        <div class="bg-primary text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold mb-4">Proactive Follow-Up Services</h1>
+                        <p class="lead mb-4">
+                            Our proactive follow-up services are designed to enhance healthcare providers' accounts receivable management. By implementing customized solutions, we help reduce the number of days accounts are past due, improving cash flow and financial stability.
+                        </p>
+                        <a href="#services" class="btn btn-light btn-lg">Explore Our Services</a>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <img src="https://via.placeholder.com/400x300" alt="Healthcare Illustration" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features Section -->
+        <div class="container py-5" id="services">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="fw-bold text-primary mb-3">Key Features</h2>
+                    <p class="lead text-muted">We provide tailored solutions to streamline your revenue cycle management.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="bi bi-people-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">Devoted Team</h5>
+                        <p class="text-muted">Our skilled team ensures prompt follow-up services for unresolved accounts.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="bi bi-chat-dots-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">Timely Communication</h5>
+                        <p class="text-muted">We facilitate prompt communication with insurance companies and patients.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="bi bi-calendar-check-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">Decreased Days Past Due</h5>
+                        <p class="text-muted">We actively engage with stakeholders to reduce overdue accounts.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="bi bi-gear-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">Streamlined Procedures</h5>
+                        <p class="text-muted">We leverage cutting-edge technologies to maximize efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Process Section -->
+        <div class="bg-light py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold text-primary mb-3">Our Process</h2>
+                        <p class="lead text-muted">A step-by-step approach to resolving your accounts receivable challenges.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <div class="badge bg-primary rounded-circle p-3 mb-3 mx-auto">1</div>
+                            <h5 class="fw-bold mb-3">Identify Issues</h5>
+                            <p class="text-muted">We analyze your accounts to identify billing inconsistencies and errors.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <div class="badge bg-primary rounded-circle p-3 mb-3 mx-auto">2</div>
+                            <h5 class="fw-bold mb-3">Custom Solutions</h5>
+                            <p class="text-muted">We design tailored solutions to address your specific needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <div class="badge bg-primary rounded-circle p-3 mb-3 mx-auto">3</div>
+                            <h5 class="fw-bold mb-3">Implement Strategies</h5>
+                            <p class="text-muted">We implement strategies to streamline your revenue cycle.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <div class="badge bg-primary rounded-circle p-3 mb-3 mx-auto">4</div>
+                            <h5 class="fw-bold mb-3">Monitor & Improve</h5>
+                            <p class="text-muted">We continuously monitor and improve processes for better results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4">Ready to Streamline Your Revenue Cycle?</h2>
+                <p class="lead mb-4">Contact us today to learn more about our services and how we can help your practice thrive.</p>
+                <a href="#" class="btn btn-light btn-lg">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <%= render "shared/footer" %>
+    <script src="<%= asset_path('js/jquery.min.js') %>"></script>
+    <script src="<%= asset_path('js/jquery-migrate-3.0.0.js') %>"></script>
+    <script src="<%= asset_path('js/jquery-ui.min.js') %>"></script>
+    <script src="<%= asset_path('js/easing.js') %>"></script>
+    <script src="<%= asset_path('js/colors.js') %>"></script>
+    <script src="<%= asset_path('js/popper.min.js') %>"></script>
+    <script src="<%= asset_path('js/bootstrap-datepicker.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.nav.js') %>"></script>
+    <script src="<%= asset_path('js/slicknav.min.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.scrollUp.min.js') %>"></script>
+    <script src="<%= asset_path('js/niceselect.js') %>"></script>
+    <script src="<%= asset_path('js/tilt.jquery.min.js') %>"></script>
+    <script src="<%= asset_path('js/owl-carousel.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.counterup.min.js') %>"></script>
+    <script src="<%= asset_path('js/steller.js') %>"></script>
+    <script src="<%= asset_path('js/wow.min.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.magnific-popup.min.js') %>"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="<%= asset_path('js/bootstrap.min.js') %>"></script>
+    <script src="<%= asset_path('js/main.js') %>"></script>
+</body>
+
+</html>
+
+<!-- Custom CSS -->
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .text-primary {
+        color: #007bff !important;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+
+    .fw-bold {
+        font-weight: 700 !important;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .badge {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+</style>

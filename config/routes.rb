@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   get 'services', to: 'pages#services'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'revenue_cycle_management', to: 'pages#revenue_cycle_management', as: 'revenue_cycle_management'
+  get 'medical_billing_audit', to: 'pages#medical_billing_audit', as: 'medical_billing_audit'
+  get 'provider_credentialing', to: 'pages#provider_credentialing', as: 'provider_credentialing'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

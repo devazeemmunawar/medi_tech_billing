@@ -4283,6 +4283,10 @@ h2 {
   color: #6c757d;
 }
 
+.text-primary {
+  color: #0056b3 !important;
+}
+
 @media (max-width: 768px) {
   .logo img {
     width: 130px !important;

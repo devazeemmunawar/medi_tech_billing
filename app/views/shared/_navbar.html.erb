@@ -1,0 +1,66 @@
+<header class="header">
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-12">
+                </div>
+                <div class="col-lg-6 col-md-7 col-12">
+                    <!-- Top Contact -->
+                    <ul class="top-contact">
+                        <li><i class="fa fa-phone"></i>+19543864393</li>
+                        <li><i class="fa fa-envelope"></i><a>meditechbilling.usa@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-inner">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <!-- Start Logo -->
+                        <div class="logo">
+                            <a href="<%= root_path %>"><%= image_tag 'MTB Logo-06.png', alt: '#', style: "width: 45%; padding-bottom: 30px;" %></a>
+                        </div>
+                        <!-- End Logo -->
+                        <!-- Mobile Nav -->
+                        <div class="mobile-nav"></div>
+                        <!-- End Mobile Nav -->
+                    </div>
+                    <div class="col-lg-7 col-md-9 col-12" style="padding-top: 10px; justify-items: center;">
+                        <div class="main-menu">
+                            <nav class="navigation">
+                                <ul class="nav menu">
+                                    <li class="<%= 'active' if current_page?(root_path) %>">
+                                        <a href="<%= root_path %>">Home </a>
+                                    </li>
+                                    <li class="<%= 'active' if current_page?(about_path) %>">
+                                        <a href="<%= about_path %>">About Us</a>
+                                    </li>
+                                    <li class="<%= 'active' if current_page?(revenue_cycle_management_path) %>">
+                                        <a href="javascript:void(0);" class="scroll-to-services">Services<i class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown">
+                                            <li><a href="<%= revenue_cycle_management_path %>">Complete RCM Solutions</a></li>
+                                            <li><a href="<%= medical_billing_audit_path %>">Medical Billing Audit</a></li>
+                                            <li><a href="<%= provider_credentialing_path %>">Provider Credentialing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="<%= 'active' if current_page?(contact_path) %>">
+                                        <a href="<%= contact_path %>">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--/ End Main Menu -->
+                    </div>
+                    <div class="col-lg-2 col-12" style="padding-top: 10px;">
+                        <div class="get-quote">
+                            <a href="<%= contact_path %>" class="btn">Schedule Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

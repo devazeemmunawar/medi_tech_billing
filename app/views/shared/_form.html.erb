@@ -1,0 +1,68 @@
+ <form class="form" action="<%= schedule_consultation_path %>" method="post">
+     <%= csrf_meta_tags %>
+     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+     <div class="row">
+         <div class="col-lg-6 col-md-6 col-12">
+             <div class="form-group">
+                 <input name="name" type="text" placeholder="Name" required>
+             </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-12">
+             <div class="form-group">
+                 <input name="business_name" type="text" placeholder="Business Name" required>
+             </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-12">
+             <div class="form-group">
+                 <input name="email" type="email" placeholder="Email" required>
+             </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-12">
+             <div class="form-group">
+                 <input name="phone" type="text" placeholder="Phone" required>
+             </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-12">
+             <div class="form-group">
+                 <select name="monthly_billing" class="form-control" required>
+                     <option value="" disabled selected>Select Monthly Billing</option>
+                     <option value="1k to 30k">1k to 30k</option>
+                     <option value="31k to 100k">31k to 100k</option>
+                     <option value="Above 100k">Above 100k</option>
+                 </select>
+             </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-12">
+             <div class="form-group">
+                 <select name="number_of_providers" class="form-control" required>
+                     <option value="" disabled selected>Select Number of Providers</option>
+                     <option value="1 to 5">1 to 5</option>
+                     <option value="6 to 10">6 to 10</option>
+                     <option value="Above 10">Above 10</option>
+                 </select>
+             </div>
+         </div>
+         <div class="col-lg-12 col-md-12 col-12">
+             <div class="form-group">
+                 <input name="total_ar" type="text" placeholder="Total AR" required>
+             </div>
+         </div>
+         <div class="col-lg-12 col-md-12 col-12">
+             <div class="form-group">
+                 <textarea name="message" placeholder="Write Your Message Here....." required></textarea>
+             </div>
+         </div>
+     </div>
+     <div class="row">
+         <div class="col-lg-5 col-md-4 col-12">
+             <div class="form-group">
+                 <div class="button">
+                     <button type="submit" class="btn">SCHEDULE A CONSULTATION</button>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-7 col-md-8 col-12">
+             <p>( We will confirm by an email )</p>
+         </div>
+     </div>
+ </form>
